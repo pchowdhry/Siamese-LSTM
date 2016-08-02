@@ -32,6 +32,7 @@ app = Flask(__name__)
 if __name__ == '__main__':
     app.run(debug=True)
 
+
 @app.route('/', methods=['POST'])
 def index():
     request_data = request.get_json(force=True)
